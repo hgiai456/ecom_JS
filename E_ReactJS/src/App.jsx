@@ -1,17 +1,13 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import './App.css';
+import Info from '@components/Info/Info';
+import './assets/styles/main.scss';
+import HomePage from '@components/HomePage/HomePage';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <div className='App'>
-            <h3>
-                Push project GitHub
-                <div>askjhdakjs</div>
-            </h3>
-        </div>
+        <>
+            <HomePage />
+            <Info />
+        </>
     );
 }
 

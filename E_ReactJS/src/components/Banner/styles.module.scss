@@ -1,0 +1,24 @@
+@use '@styles/mixin.module.scss' as *;
+@use '@styles/variable.module.scss' as *;
+.container {
+    @include flex_box_custom(center, center, 0px);
+    background-image: url(../../assets/icons/images/KAT_BANNER-WEB_OBL.jpg);
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+}
+
+.content {
+    @include flex_box_custom(center, center, 10px);
+    flex-direction: column;
+}
+
+.title {
+    font-size: 42px;
+    color: $four_color;
+    font-weight: 400;
+}
+.des {
+    color: $thr_color;
+}
