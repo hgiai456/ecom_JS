@@ -1,0 +1,27 @@
+@use '@styles/variable.module.scss' as *;
+@use '@styles/mixin.module.scss' as *;
+
+.container {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/hg-store-a11c5.firebasestorage.app/o/media-library%2F1768021439576-ca-phe-sua.jpg?alt=media&token=37e49329-1e48-44e3-b3ea-b050986d2c43');
+    width: calc(100% / 2);
+    height: 409px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerTimer {
+    @include flex_box_custom(center, center, 10px);
+    margin-top: 120px;
+}
+
+.title {
+    color: $four_color;
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.boxBtn {
+    margin-top: 20px;
+    text-align: center;
+}
