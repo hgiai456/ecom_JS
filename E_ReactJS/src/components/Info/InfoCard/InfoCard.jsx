@@ -8,7 +8,7 @@ function InfoCard({ content, description, src }) {
             <img width={40} height={41} src={src} alt='' />
             <div className={containerContent}>
                 <div className={title}>{content}</div>
-                <div className={des}>{description}</div>
+                <div className={des}>{description}</div>    
             </div>
         </div>
     );
