@@ -8,6 +8,8 @@ import { getProduct } from '@apis/productService';
 
 import { useState, useEffect } from 'react';
 import PopularProduct from '@components/PopularProduct/PopularProduct';
+import SaleHomePage from '@components/SaleHomePage/SaleHomePage';
+import MyFooter from '@components/Footer/Footer';
 
 function HomePage() {
     const [listProducts, setListProducts] = useState([]);
@@ -28,6 +30,8 @@ function HomePage() {
                 <AdvanceHeadling />
                 <HeadlingListProduct data={listProducts.slice(0, 2)} />
                 <PopularProduct data={listProducts.slice(2, 10)} />
+                <SaleHomePage />
+                <MyFooter />
             </div>
         </div>
     );
